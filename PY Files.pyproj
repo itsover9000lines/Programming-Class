@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{c6357bdb-88c6-413c-bbd1-526a28f66ccd}</ProjectGuid>
+    <ProjectGuid>{9f5d823b-4218-48bc-9d53-bf6e11dee080}</ProjectGuid>
     <ProjectHome />
     <StartupFile>Chapter1.py</StartupFile>
     <SearchPath />
@@ -25,6 +25,7 @@
     <Compile Include="example.py" />
     <Compile Include="fiveTimes.py" />
     <Compile Include="hello.py" />
+    <Compile Include="magicBall.py" />
     <Compile Include="quizWork.py" />
     <Compile Include="sysExit.py" />
     <Compile Include="while_example.py" />

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PY Files", "PY Files.pyproj", "{B178CE48-1F84-4B7D-97E8-1290B9E81DA0}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python", "Python.pyproj", "{B178CE48-1F84-4B7D-97E8-1290B9E81DA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

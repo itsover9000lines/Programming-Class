@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b178ce48-1f84-4b7d-97e8-1290b9e81da0}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Chapter1.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <Name>Python</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Chapter1.py" />
+    <Compile Include="Chapter2.py" />
+    <Compile Include="Chapter3.py" />
+    <Compile Include="Count.py" />
+    <Compile Include="example.py" />
+    <Compile Include="fiveTimes.py" />
+    <Compile Include="guessTheNumber.py" />
+    <Compile Include="hello.py" />
+    <Compile Include="helloFunc.py" />
+    <Compile Include="helloFunc2.py" />
+    <Compile Include="infiniteLoop.py" />
+    <Compile Include="littleKid.py" />
+    <Compile Include="magic8Ball.py" />
+    <Compile Include="printRandom.py" />
+    <Compile Include="quizWork.py" />
+    <Compile Include="sameName.py" />
+    <Compile Include="sameName2.py" />
+    <Compile Include="sameName3.py" />
+    <Compile Include="sameName4.py" />
+    <Compile Include="swordfish.py" />
+    <Compile Include="sysExit.py" />
+    <Compile Include="vampire.py" />
+    <Compile Include="vampire2.py" />
+    <Compile Include="while_example.py" />
+    <Compile Include="while_example2.py" />
+    <Compile Include="yourName.py" />
+    <Compile Include="yourName2.py" />
+    <Compile Include="zeroDivide.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

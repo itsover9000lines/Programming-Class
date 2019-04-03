@@ -31,7 +31,13 @@
     <Compile Include="infiniteLoop.py" />
     <Compile Include="littleKid.py" />
     <Compile Include="magic8Ball.py" />
+    <Compile Include="Chapter3EX.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Chapter3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="exitExample.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="printRandom.py" />

@@ -22,9 +22,7 @@
   <ItemGroup>
     <Compile Include="Chapter1.py" />
     <Compile Include="Chapter2.py" />
-    <Compile Include="Chapter3.py" />
     <Compile Include="Count.py" />
-    <Compile Include="example.py" />
     <Compile Include="fiveTimes.py" />
     <Compile Include="guessTheNumber.py" />
     <Compile Include="hello.py" />
@@ -33,6 +31,9 @@
     <Compile Include="infiniteLoop.py" />
     <Compile Include="littleKid.py" />
     <Compile Include="magic8Ball.py" />
+    <Compile Include="Chapter3.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="printRandom.py" />
     <Compile Include="quizWork.py" />
     <Compile Include="sameName.py" />

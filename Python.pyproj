@@ -20,6 +20,9 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="allMyCats2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Chapter1.py" />
     <Compile Include="Chapter2.py" />
     <Compile Include="Count.py" />
@@ -38,6 +41,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="exitExample.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="allMyCats1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="magic8Ball2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="myPets.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="printRandom.py" />

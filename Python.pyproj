@@ -58,6 +58,9 @@
     <Compile Include="sameName2.py" />
     <Compile Include="sameName3.py" />
     <Compile Include="sameName4.py" />
+    <Compile Include="shell.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="swordfish.py" />
     <Compile Include="sysExit.py" />
     <Compile Include="vampire.py" />

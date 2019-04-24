@@ -25,6 +25,12 @@
     </Compile>
     <Compile Include="Chapter1.py" />
     <Compile Include="Chapter2.py" />
+    <Compile Include="Chapter5-shell.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chapter4.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Count.py" />
     <Compile Include="fiveTimes.py" />
     <Compile Include="guessTheNumber.py" />
@@ -32,7 +38,13 @@
     <Compile Include="helloFunc.py" />
     <Compile Include="helloFunc2.py" />
     <Compile Include="infiniteLoop.py" />
+    <Compile Include="List-methods-shell.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="littleKid.py" />
+    <Compile Include="Looping-Lists-Shell.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="magic8Ball.py" />
     <Compile Include="Chapter3EX.py">
       <SubType>Code</SubType>
@@ -52,8 +64,14 @@
     <Compile Include="myPets.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="passingReference.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="printRandom.py" />
     <Compile Include="quizWork.py" />
+    <Compile Include="References and passing reference shell.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="sameName.py" />
     <Compile Include="sameName2.py" />
     <Compile Include="sameName3.py" />

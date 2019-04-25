@@ -1,11 +1,8 @@
 import random
 
 avengers = ['Thor', 'Iron Man', 'Spiderman', 'Hulk', 'Falcon', 'Black Widow', 'Antman', 'Captain America']
-verb = ['smashed', 'kicked', 'slapped']
+verb = ['smashed', 'kicked', 'slapped', 'bonked']
 villian = []
 
-print('Please enter 8 villian names')
-while True:
-    name = input()
-    if name == '':
-        print('Please enter a name')
+for i in range(8):
+    villian.append(input('Enter 8 villian names. (Villian number ' + str(i + 1) + ')')) # asks user to list 8 villians

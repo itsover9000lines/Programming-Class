@@ -18,7 +18,6 @@ for i in range(8):
 print('Welcom to Avengers: End of Line!') # welcomes the user
 input('Press "Enter" to continue.') # asks the user to press the enter key to continue the script
 
-selectedAvenger = random.choice(avengers)
-selectedVillian = random.choice(villian)
-selectedVerb = random.choice(verb)
-
+selectedAvenger = random.choice(avengers) # selects a random avenger
+selectedVillian = random.choice(villian) # selects a random villian
+selectedVerb = random.choice(verb) # selects a random verb

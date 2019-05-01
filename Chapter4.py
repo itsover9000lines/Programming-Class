@@ -1,7 +1,17 @@
 '''
 
 Hunter O'Neill
+
+v1
+
+End of Line
+
 4/29/19
+
+This program has a set of 8 Avengers, the user running the program is asked to enter 8 villian
+names, the program will randomly select an avenger, and a villian. It will randomly select the outcome,
+the Avengers winning, or the villians.
+
 
 '''
 

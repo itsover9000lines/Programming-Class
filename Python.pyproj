@@ -23,12 +23,18 @@
     <Compile Include="allMyCats2.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="birthdays.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Chapter1.py" />
     <Compile Include="Chapter2.py" />
     <Compile Include="Chapter5-shell.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Chapter4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="characterCount.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Count.py" />
@@ -65,6 +71,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="passingReference.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prettyCharacterCount.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="printRandom.py" />

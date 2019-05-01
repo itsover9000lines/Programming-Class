@@ -23,7 +23,7 @@ villian = []
 # these are the lists that the script will use
 
 for i in range(8):
-    villian.append(input('Enter 8 villian names. (Villian number ' + str(i + 1) + ')')) # asks user to list 8 villians
+    villian.append(input('Enter villian number ' + str(i + 1))) # asks user to list 8 villians
 
 print('Welcom to Avengers: End of Line!') # welcomes the user
 input('Press "Enter" to continue.') # asks the user to press the enter key to continue the script
@@ -31,3 +31,8 @@ input('Press "Enter" to continue.') # asks the user to press the enter key to co
 selectedAvenger = random.choice(avengers) # selects a random avenger
 selectedVillian = random.choice(villian) # selects a random villian
 selectedVerb = random.choice(verb) # selects a random verb
+
+winner = random.choice([selectedAvenger, selectedVillian])
+
+
+print(winner)

@@ -16,7 +16,6 @@ the Avengers winning, or the villians.
 '''
 
 import random # imports the random module
-import secrets # imports the secrets module
 
 avengers = ['Thor', 'Iron Man', 'Spiderman', 'Hulk', 'Falcon', 'Black Widow', 'Antman', 'Captain America']
 verb = ['smashed', 'kicked', 'slapped', 'bonked']
@@ -44,30 +43,36 @@ else: avengers.remove(selectedAvenger)
 # if the winner is the avengers, then the villian gets removed, and vice versa
 '''
 
-while avengers or villian > 2:
+while len(avengers) >= 1:
 
     selectedAvenger = random.choice(avengers) # selects a random avenger
     selectedVillian = random.choice(villian) # selects a random villian
     selectedVerb = random.choice(verb) # selects a random verb
-
-    winner = [selectedAvenger, selectedVillian]
-
+    
+    winner = []
+    winner.append(selectedAvenger)
+    winner.append(selectedVillian)
+    
     loser = random.choice(winner) # selects a loser
-   # print(winner)
-   # print(loser)
+
     winner.remove(loser) # removes the loser from the winner list
-   # print(winner)
 
-    print(winner + ' ' + selectedVerb + ' ' + loser) # prints the result
+    print(winner + ' ' + selectedVerb + ' ' +  loser) # prints the result
 
-    if winner == selectedAvenger:
+    if len(villian) <= 1:
+        break
+    
+    if winner == [selectedAvenger]:
         villian.remove(selectedVillian)
 
     else: avengers.remove(selectedAvenger)
-# if the winner is the avengers, then the villian gets removed, and vice versa
+    # if the winner is the avengers, then the villian gets removed, and vice versa
 
-if avengers > 1:
-    print('The Avengers win! The surviving members are ' + avengers + '!')
+if len(avengers) >= 2:
+    print('The Avengers win! The surviving members are ')
+    print(avengers)
 else:
-    print('The villians win! The surviving memebrs are ' + villian + '!')
+    print('The villians win! The surviving memebrs are ')
+    print(villian)
+
 # prints the final result

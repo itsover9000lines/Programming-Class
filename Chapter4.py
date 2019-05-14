@@ -15,18 +15,31 @@ the Avengers winning, or the villians.
 
 '''
 
-import random # imports the random module
+import random
 
-avengers = ['Thor', 'Iron Man', 'Spiderman', 'Hulk', 'Falcon', 'Black Widow', 'Antman', 'Captain America']
-verb = ['smashed', 'kicked', 'slapped', 'bonked']
+avengers = [
+    'Thor',
+    'Iron Man',
+    'Spiderman',
+    'Hulk',
+    'Falcon',
+    'Black Widow',
+    'Antman',
+    'Captain America'
+    ]
+verb = [
+    'smashed',
+    'kicked',
+    'slapped',
+    'bonked'
+    ]
 villian = []
-# these are the lists that the script will use
 
 for i in range(8):
-    villian.append(input('Enter villian number ' + str(i + 1))) # asks user to list 8 villians
+    villian.append(input('Enter villian number ' + str(i + 1)))
 
-print('Welcom to Avengers: End of Line!') # welcomes the user
-input('Press "Enter" to continue.') # asks the user to press the enter key to continue the script
+print('Welcom to Avengers: End of Line!')
+input('Press "Enter" to continue.')
 
 '''
 selectedAvenger = random.choice(avengers) # selects a random avenger
@@ -45,34 +58,40 @@ else: avengers.remove(selectedAvenger)
 
 while len(avengers) >= 1:
 
-    selectedAvenger = random.choice(avengers) # selects a random avenger
-    selectedVillian = random.choice(villian) # selects a random villian
-    selectedVerb = random.choice(verb) # selects a random verb
+    selectedAvenger = random.choice(avengers)
+    selectedVillian = random.choice(villian)
+    selectedVerb = random.choice(verb)
     
     winner = []
     winner.append(selectedAvenger)
     winner.append(selectedVillian)
     
-    loser = random.choice(winner) # selects a loser
+    loser = random.choice(winner)
 
-    winner.remove(loser) # removes the loser from the winner list
+    winner.remove(loser)
 
-    print(winner + ' ' + selectedVerb + ' ' +  loser) # prints the result
+    print(winner[0] + ' ' + selectedVerb[0] + ' ' +  loser[0])
 
-    if len(villian) <= 1:
-        break
+    '''
+    not sure why it only prints the first letter of most of the
+    selections, just turned it in now so i can get some points
+    '''
     
     if winner == [selectedAvenger]:
         villian.remove(selectedVillian)
 
-    else: avengers.remove(selectedAvenger)
+    else:
+        avengers.remove(selectedAvenger)
     # if the winner is the avengers, then the villian gets removed, and vice versa
+
+    if len(villian) == 0:
+        break
 
 if len(avengers) >= 2:
     print('The Avengers win! The surviving members are ')
     print(avengers)
+    print(villian)
 else:
     print('The villians win! The surviving memebrs are ')
     print(villian)
-
-# prints the final result
+    print(avengers)

@@ -16,45 +16,42 @@ the Avengers winning, or the villians.
 '''
 
 import random
+from collections import defaultdict
 
-avengers = [
-    'Thor',
-    'Iron Man',
-    'Spiderman',
-    'Hulk',
-    'Falcon',
-    'Black Widow',
-    'Antman',
-    'Captain America'
-    ]
+avengers = {
+    'name': 'Thor', 'power': 7,
+    'name': 'Iron Man', 'power': 10,
+    'name': 'Spiderman', 'power': 4,
+    'name': 'Hulk', 'power': 6,
+    'name': 'Falcon', 'power': 5,
+    'name': 'Black Widow', 'power': 4,
+    'name': 'Antman', 'power': 4,
+    'name': 'Captain America', 'power': 6
+    }
 verb = [
     'smashed',
     'kicked',
     'slapped',
     'bonked'
     ]
-villian = []
+
+villian = {}
+
 
 for i in range(8):
-    villian.append(input('Enter villian number ' + str(i + 1)))
+    name = input('Enter villian name number ' + str(i + 1))
+    power = input('Enter the villains power number')
 
+    villian[name]=power
+
+
+print(villian)
+
+
+    
+'''
 print('Welcom to Avengers: End of Line!')
 input('Press "Enter" to continue.')
-
-'''
-selectedAvenger = random.choice(avengers) # selects a random avenger
-selectedVillian = random.choice(villian) # selects a random villian
-selectedVerb = random.choice(verb) # selects a random verb
-
-winner = random.choice([selectedAvenger, selectedVillian]) # selects a winner
-
-if winner == selectedAvenger:
-    villian.remove(selectedVillian)
-
-else: avengers.remove(selectedAvenger)
-
-# if the winner is the avengers, then the villian gets removed, and vice versa
-'''
 
 while len(avengers) >= 1:
 
@@ -90,3 +87,4 @@ else:
     print('The villians win! The surviving memebrs are ')
     print(villian)
     print(avengers)
+'''

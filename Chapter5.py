@@ -2,11 +2,11 @@
 
 Hunter O'Neill
 
-v1
+v1.2
 
 End of Line
 
-4/29/19
+5/23/19
 
 This program has a set of 8 Avengers, the user running the program is asked to enter 8 villian
 names, the program will randomly select an avenger, and a villian. It will randomly select the outcome,
@@ -16,18 +16,18 @@ the Avengers winning, or the villians.
 '''
 
 import random
-from collections import defaultdict
 
 avengers = {
-    'name': 'Thor', 'power': 7,
-    'name': 'Iron Man', 'power': 10,
-    'name': 'Spiderman', 'power': 4,
-    'name': 'Hulk', 'power': 6,
-    'name': 'Falcon', 'power': 5,
-    'name': 'Black Widow', 'power': 4,
-    'name': 'Antman', 'power': 4,
-    'name': 'Captain America', 'power': 6
-    }
+    'Thor': {'power': 7, 'Pts': 6},
+    'Iron Man': {'power': 10, 'Pts': 10},
+    'Spiderman': {'power': 4, 'Pts': 3},
+    'Hulk': {'power': 6, 'Pts': 5},
+    'Falcon': {'power': 5, 'Pts': 4},
+    'Black Widow': {'power': 4, 'Pts': 3},
+    'Antman': {'power': 4, 'Pts': 3},
+    'Captain America': {'power': 6, 'Pts': 5}
+}
+
 verb = [
     'smashed',
     'kicked',
@@ -40,16 +40,20 @@ villian = {}
 
 for i in range(8):
     name = input('Enter villian name number ' + str(i + 1))
-    power = input('Enter the villains power number')
+    try:
+        power = int(input('Enter the villains power number'))
+    except ValueError:
+        print('Thats not a number! Please enter a number.')
+
 
     villian[name]=power
 
 
 print(villian)
+print(avengers)
 
 
     
-'''
 print('Welcom to Avengers: End of Line!')
 input('Press "Enter" to continue.')
 
@@ -87,4 +91,3 @@ else:
     print('The villians win! The surviving memebrs are ')
     print(villian)
     print(avengers)
-'''

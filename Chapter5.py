@@ -2,15 +2,15 @@
 
 Hunter O'Neill
 
-v1.2
+v2
 
 End of Line
 
 5/23/19
 
 This program has a set of 8 Avengers, the user running the program is asked to enter 8 villian
-names, the program will randomly select an avenger, and a villian. It will randomly select the outcome,
-the Avengers winning, or the villians.
+names, and power levels. The program will randomly select an avenger, and a villian. It will select 
+the outcome based on power and hitpoints. The Avengers winning, or the villians.
 
 
 '''
@@ -46,7 +46,7 @@ for i in range(8):
         print('Thats not a number! Please enter a number.')
 
 
-    villian[name]=power
+    villian[name] = {'power': power, 'pts': 6}
 
 
 print(villian)
@@ -59,9 +59,10 @@ input('Press "Enter" to continue.')
 
 while len(avengers) >= 1:
 
-    selectedAvenger = random.choice(avengers)
-    selectedVillian = random.choice(villian)
+    selectedAvenger = []
+    selectedVillian = []
     selectedVerb = random.choice(verb)
+
     
     winner = []
     winner.append(selectedAvenger)

@@ -46,7 +46,7 @@ for i in range(8):
         print('Thats not a number! Please enter a number.')
 
 
-    villian[name] = {'power': power, 'pts': 6}
+    villian[name] = {'power': power, 'Pts': 6}
 
 
 print(villian)
@@ -57,28 +57,27 @@ print(avengers)
 print('Welcom to Avengers: End of Line!')
 input('Press "Enter" to continue.')
 
-while len(avengers) >= 1:
+for keys in avengers:
 
-    selectedAvenger = []
-    selectedVillian = []
+    selectedAvenger = random.choice(list(avengers.keys()))
+    selectedVillian = random.choice(list(villian.keys()))
     selectedVerb = random.choice(verb)
 
-    
     winner = []
     winner.append(selectedAvenger)
     winner.append(selectedVillian)
     
-    loser = random.choice(winner)
+    loser = []
 
-    winner.remove(loser)
+    
 
-    print(winner[0] + ' ' + selectedVerb[0] + ' ' +  loser[0])
+    print(winner[0] + ' ' + selectedVerb + ' ' +  loser)
     
     if winner == [selectedAvenger]:
-        villian.remove(selectedVillian)
+        del villian[selectedVillian]
 
     else:
-        avengers.remove(selectedAvenger)
+        del avengers[selectedAvenger]
     # if the winner is the avengers, then the villian gets removed, and vice versa
 
     if len(villian) == 0:
@@ -87,8 +86,6 @@ while len(avengers) >= 1:
 if len(avengers) >= 2:
     print('The Avengers win! The surviving members are ')
     print(avengers)
-    print(villian)
 else:
     print('The villians win! The surviving memebrs are ')
     print(villian)
-    print(avengers)

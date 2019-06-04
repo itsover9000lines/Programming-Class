@@ -26,6 +26,9 @@
     <Compile Include="birthdays.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="catnapping.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Chapter1.py" />
     <Compile Include="Chapter2.py" />
     <Compile Include="Chapter5-shell.py">
@@ -93,6 +96,9 @@
     </Compile>
     <Compile Include="swordfish.py" />
     <Compile Include="sysExit.py" />
+    <Compile Include="validateInput.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="vampire.py" />
     <Compile Include="vampire2.py" />
     <Compile Include="while_example.py" />
